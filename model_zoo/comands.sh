@@ -1,0 +1,10 @@
+python train.py --name waterbirds_exp --model_arch ViT --model_type scratch --dataset waterbirds --warmup_steps 300 --num_steps 1000 --learning_rate 0.003 --batch_split 1 --img_size 224 --use_adam
+python train.py --name waterbirds_exp --model_arch ViT --model_type scratch --dataset waterbirds --warmup_steps 400 --num_steps 1000 --learning_rate 0.003 --batch_split 1 --img_size 224 --use_adam
+python train.py --name waterbirds_exp --model_arch ViT --model_type scratch --dataset waterbirds --warmup_steps 500 --num_steps 1000 --learning_rate 0.003 --batch_split 1 --img_size 224 --use_adam
+python train.py --name waterbirds_exp --model_arch ViT --model_type scratch --dataset waterbirds --warmup_steps 300 --num_steps 1000 --learning_rate 0.03 --batch_split 1 --img_size 224 --use_adam
+python train.py --name waterbirds_exp --model_arch ViT --model_type scratch --dataset waterbirds --warmup_steps 400 --num_steps 1000 --learning_rate 0.03 --batch_split 1 --img_size 224 --use_adam
+python train.py --name waterbirds_exp --model_arch ViT --model_type scratch --dataset waterbirds --warmup_steps 500 --num_steps 1000 --learning_rate 0.03 --batch_split 1 --img_size 224 --use_adam
+python train.py --name waterbirds_exp --model_arch ViT --model_type scratch --dataset waterbirds --warmup_steps 300 --num_steps 1000 --learning_rate 0.03 --batch_split 1 --img_size 224 --use_adam --weight_decay 0.01
+python train.py --name waterbirds_exp --model_arch ViT --model_type scratch --dataset waterbirds --warmup_steps 400 --num_steps 1000 --learning_rate 0.03 --batch_split 1 --img_size 224 --use_adam --weight_decay 0.01
+python train.py --name waterbirds_exp --model_arch ViT --model_type scratch --dataset waterbirds --warmup_steps 500 --num_steps 1000 --learning_rate 0.03 --batch_split 1 --img_size 224 --use_adam --weight_decay 0.01
+python evaluate.py --name waterbirds_exp --model_arch ViT --model_type ViT-B_16 --dataset waterbirds --batch_size 32 --img_size 224 --checkpoint_dir /usa/yxpengcs/PycharmProjects/vit-spurious-robustness/output/waterbirds_exp/waterbirds/ViT/ViT-B_16
